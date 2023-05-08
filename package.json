@@ -14,9 +14,15 @@
     "@types/react-dom": "18.2.1",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.2",
+    "framer-motion": "^10.12.8",
+    "gsap": "^3.11.5",
     "next": "13.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-scroll": "^1.8.9",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.7"
   }
 }
