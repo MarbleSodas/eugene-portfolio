@@ -2,16 +2,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
+    font-size: 1.6rem;
   }
   
   
-  .input,
+  .input {
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-style: inset;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    width: 80vw;
+  }
+
   .textarea {
-    padding: 0.8rem;
-    margin-bottom: 0.5rem;
-    font-size: 16px;
-    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-style: inset;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    width: 80vw;
+    height: 15vw;
   }
   
   .button {
@@ -19,7 +33,7 @@
     color: #fff;
     padding: 8px 16px;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
   }
   

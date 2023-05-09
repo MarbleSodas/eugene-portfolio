@@ -6,7 +6,7 @@ function Contact() {
     <div id='contact'>
         <h1 className='contact'>CONTACT</h1>
 
-        <form className={styles.contactForm} method='post'>
+        <form className={styles.contactForm} method='post' name='contact' data-netlify='true'>
             
             <p>
                 <input className={styles.input} type='text' name='name' placeholder="Name"/>
@@ -18,7 +18,7 @@ function Contact() {
                 <textarea className={styles.textarea} name='message' placeholder="Message"/>
             </p>
             <p>
-                <button className={styles.button}>Submit</button>
+                <button className={styles.button} type='submit'>Submit</button>
             </p>
         </form>
     </div>
