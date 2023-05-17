@@ -9,13 +9,13 @@ function Contact() {
         <form className={styles.contactForm} method='post' name='contact' data-netlify='true'>
             
             <p>
-                <input className={styles.input} type='text' name='name' placeholder="Name"/>
+                <input className={styles.input} type='text' name='name' placeholder="Name" required/>
             </p>
             <p>
-                <input className={styles.input} type='email' name='email' placeholder="Email"/>
+                <input className={styles.input} type='email' name='email' placeholder="Email" required/>
             </p>
             <p>
-                <textarea className={styles.textarea} name='message' placeholder="Message"/>
+                <textarea className={styles.textarea} name='message' placeholder="Message" required/>
             </p>
             <p>
                 <button className={styles.button} type='submit'>Submit</button>
