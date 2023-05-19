@@ -15,7 +15,7 @@ const Header = () => {
         <div>
           <Link activeClass='active' to="about" spy={true} smooth={true} offset={-50} duration={500}>About</Link>
           <Link activeClass='active' to="projects" spy={true} smooth={true} offset={-50} duration={500}>Projects</Link>
-          <Link activeClass='active' to="contact" spy={true} smooth={true} offset={-50} duration={500}>Contact</Link>
+          <Link activeClass='active' to="contactform" spy={true} smooth={true} offset={-50} duration={500}>Contact</Link>
         </div>
       </nav>
     </header>
