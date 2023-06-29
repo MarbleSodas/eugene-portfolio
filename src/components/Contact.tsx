@@ -9,7 +9,6 @@ function Contact() {
         <form className={styles.contactForm} method='post' name='contact' data-netlify='true'>
         
         <input type="hidden" name="form-name" value="contact" />
-            
             <p>
                 <input className={styles.input} type='text' name='name' placeholder="Name" required/>
             </p>
