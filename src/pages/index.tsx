@@ -10,8 +10,10 @@ export default function Home() {
       {/* Reposition Bio to below projects and add a skills section above projects */}
       <Hero />
       {/* skills */}
+      {/* add icons for each project */}
       <Projects />
       <Bio />
+      {/* Reorder links in header */}
       <Header />
       <Contact />
     </>

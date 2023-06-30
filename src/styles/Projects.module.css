@@ -1,0 +1,62 @@
+.projects {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+  .title {
+    font-family:var(--Questrial);
+    font-size: clamp(5rem, 8vw, 10rem);
+    color: var(--primaryTextColor);
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.body {
+    padding: 0;
+}
+
+.itemTitle {
+    font-family:var(--Questrial);
+    font-size: clamp(1rem, 9.5vw, 2rem);
+}
+
+.itemPrice {
+    font-family:var(--Questrial);
+    font-size: clamp(1rem, 9.5vw, 2rem);
+    color: #ccc;
+}
+
+.modalHeader {
+    font-family:var(--Questrial);
+    font-size: clamp(1rem, 9.5vw, 2rem);
+}
+
+.modalText {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.cardGrid {
+    width: 50vw;
+    max-width: 700px;
+}
+
+@media (max-width: 768px) {
+    .cardGrid {
+        width: 60vw;
+    }
+    .title {
+        font-family:var(--Questrial);
+        font-size: clamp(5rem, 8vw, 6rem);
+        color: var(--primaryTextColor);
+        padding-bottom: 50px;
+        text-align: center;
+    }
+  }

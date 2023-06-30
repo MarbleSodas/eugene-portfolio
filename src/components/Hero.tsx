@@ -6,15 +6,17 @@ function Hero() {
     <header className="hero__header" id="home">
       <h1>
         <Typewriter
-                  options={{
-                      wrapperClassName: "typedText",
-                      strings: 'Eugene Park',
-                      autoStart: true,
+                  onInit={(typewriter) => {
+                    typewriter.typeString('Hi, I\'m' + "\n" + 'Eugene Park')
+                      .pauseFor(1500)
+                      .deleteChars(11)
+                      .start();
+                      typewriter.typeString('<span style="color: #0aa1ff;">Eugene Park</span>')
                   }}
         />
       </h1>
       {/* add animation to the h2 */}
-      <h2>Full Stack Developer</h2>
+      <h2>Front-End Developer</h2>
     </header>
   );
 }
