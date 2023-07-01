@@ -48,6 +48,15 @@
     max-width: 700px;
 }
 
+.card {
+    background: white;
+    padding: 3rem 5rem;
+}
+
+.card p {
+    padding-top: 1rem;
+}
+
 @media (max-width: 768px) {
     .cardGrid {
         width: 60vw;
