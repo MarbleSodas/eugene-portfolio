@@ -25,6 +25,8 @@
 }
 
 .itemPrice {
+    padding: 15px;
+    text-align: center;
     font-family:var(--Questrial);
     font-size: clamp(1rem, 9.5vw, 2rem);
     color: #ccc;

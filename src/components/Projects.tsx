@@ -138,9 +138,11 @@ function Projects() {
             </Row>
             </Modal.Header>
             <Modal.Body>
-            <Text className={styles.itemPrice}>
-                {list.find(item => item.id === selectedItemId)?.description}
-                </Text>
+                <div className={styles.modalBody}>
+                    <Text className={styles.itemPrice}>
+                        {list.find(item => item.id === selectedItemId)?.description}
+                    </Text>
+                </div>
             </Modal.Body>
             <Modal.Footer>
             <Button auto flat color="error" onPress={() => setIsModalOpen(false)}>
