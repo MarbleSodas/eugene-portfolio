@@ -65,7 +65,7 @@ function Projects() {
       };
 
   return (
-    <div className='page'>
+    <div className='page' id='projects'>
         <header className={styles.header}>
             <motion.div
                 initial={{ opacity: 0 }}
@@ -99,7 +99,7 @@ function Projects() {
                             <div className={styles.iconList}>
                                 {item.icons.map((icon, index) => (
                                     <div key={index} className={styles.iconItem}>
-                                        <a href={icon.url} target="_blank">{icon.icon}</a>
+                                        <a>{icon.icon}</a>
                                     </div>
                                 ))}
                             </div>

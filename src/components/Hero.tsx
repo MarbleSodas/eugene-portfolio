@@ -1,5 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { motion } from 'framer-motion';
 
 function Hero() {
   return (
@@ -16,7 +17,11 @@ function Hero() {
         />
       </h1>
       {/* add animation to the h2 */}
-      <h2>Front-End Developer</h2>
+      <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { delay: 8, duration: .5 }}}>
+        <h2>Front-End Developer</h2>
+      </motion.div>
     </header>
   );
 }
