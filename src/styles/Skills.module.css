@@ -65,8 +65,9 @@
 }
 
 .modalText {
-    font-family:var(--Questrial);
-    font-size: 1.8rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 18px;
     text-align: center;
 }
 

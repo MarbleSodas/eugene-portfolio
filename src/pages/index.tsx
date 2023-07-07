@@ -3,17 +3,16 @@ import Hero from "@/components/Hero";
 import Bio from "@/components/Bio";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
     <>
-      {/* Reposition Bio to below projects and add a skills section above projects */}
       <Hero />
-      {/* skills */}
-      {/* add icons for each project */}
+      {/* <Skills /> */}
       <Projects />
       <Bio />
-      {/* Reorder links in header */}
+      {/* rewrite this part */}
       <Header />
       <Contact />
     </>

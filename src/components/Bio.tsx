@@ -1,14 +1,28 @@
 import React from 'react'
+import { motion } from 'framer-motion';
+import { Button } from '@nextui-org/react';
 
 function Bio() {
   return (
     <div id="about" className='page'>
-      <h1 className="title">About</h1>
-      <p className="paragraph">{"As a computer science student with a passion for building websites and exploring all things computer-related."}</p>
-      <p className="paragraph">{"Currently, I work as a cashier and barista at 85C Bakery Cafe, where I've developed strong people skills and an unwavering commitment to providing top-notch customer service. But even while working in a non-tech job, my mind is always buzzing with ideas for new projects and ways to apply my programming skills."}</p>
-      <p className="paragraph">{"As an aspiring developer, I'm constantly learning new programming languages and exploring various web development frameworks. I thrive on challenges and am always seeking opportunities to push the boundaries of what's possible. My creative mind and strong work ethic set me apart, and I'm excited to make a meaningful impact in the tech industry in the future!"}</p>
+      <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: .5 }}}
+            >
+              <h1 className="title">About</h1>
+      </motion.div>
+      <motion.div className="bio"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: .5 }}}
+            >
+              <p className="paragraph">{"I am currently a Computer Science student at Chaffey College and I also study software development in my free time. My passion in development has led me to expand my skill set and problem-solve in more creative ways!As a growing developer, I\'m constantly learning new programming languages and exploring various web development frameworks. I thrive on challenges and am always seeking opportunities to push the boundaries of what I can do. My creative mind and strong work ethic set me apart, and I\'m excited to make a meaningful impact in the tech industry in the future!"}</p>
+              <div className='button'>
+                <Button bordered size="lg" color="primary" rounded ghost>
+                  Resume
+                </Button>
+              </div>
+      </motion.div>
     </div>
-    // Put resume link here
   )
 }
 
