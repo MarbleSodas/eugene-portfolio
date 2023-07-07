@@ -27,6 +27,7 @@
     "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
-    "@types/react-scroll": "^1.8.7"
+    "@types/react-scroll": "^1.8.7",
+    "file-loader": "^6.2.0"
   }
 }

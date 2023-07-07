@@ -153,6 +153,11 @@ body {
   align-content: center;
 }
 
+.button a {
+  text-decoration: none;
+  color: var(--primaryTextColor);
+}
+
 .projects {
   display: flex;
   text-align: center;
