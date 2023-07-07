@@ -6,6 +6,7 @@ import { Card, Grid, Text, Button, Row, Modal, useModal } from "@nextui-org/reac
 import Image from 'next/image';
 import { useState } from 'react';
 import nextIcon from './icons/next-js.svg';
+import typescriptIcon from './icons/typescript-official-svgrepo-com.svg';
 import vercelIcon from './icons/vercel-icon-svgrepo-com.svg';
 import wordpressIcon from './icons/wordpress-color-svgrepo-com.svg';
 import pleskIcon from './icons/plesk-svgrepo-com.svg';
@@ -26,10 +27,16 @@ function Projects() {
                 icon: <Image src={nextIcon} alt="Next.js" width={30} height={30} />
             }, {
                 id: 2,
+                title: "Typscript",
+                url: "https://www.typescriptlang.org/",
+                icon : <Image src={typescriptIcon} alt="Typescript" width={30} height={30} />
+            }, {
+                id: 3,
                 title: "Vercel",
                 url: "https://vercel.com/",
                 icon : <Image src={vercelIcon} alt="Vercel" width={30} height={30} />
-            }]
+            }
+        ]
         },
         {
             id: 2,
@@ -80,7 +87,7 @@ function Projects() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, transition: { duration: .5 }}}
         >
-        <Grid.Container gap={0} justify="space-around" css={{p: 50}} >
+        <Grid.Container gap={0} justify="space-evenly" >
             {list.map((item, index) => (
                 <Grid className={styles.cardGrid} key={index}>
                     <Card isPressable isHoverable onPress={() => handleCardPress(item.id)}>
