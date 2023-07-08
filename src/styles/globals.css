@@ -144,10 +144,9 @@ body {
   align-content: center;
 }
 
-.button {
+.bio {
   display: flex;
-  padding-left: 45vw;
-  padding-right: 45vw;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-content: center;

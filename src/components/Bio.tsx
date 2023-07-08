@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { Button } from '@nextui-org/react';
+import { Button, Container, Row } from '@nextui-org/react';
 
 function Bio() {
 
@@ -17,13 +17,15 @@ function Bio() {
                 whileInView={{ opacity: 1, transition: { duration: .5 }}}
             >
               <p className="paragraph">{"I am currently a Computer Science student at Chaffey College and I also study software development in my free time. My passion in development has led me to expand my skill set and problem-solve in more creative ways!As a growing developer, I\'m constantly learning new programming languages and exploring various web development frameworks. I thrive on challenges and am always seeking opportunities to push the boundaries of what I can do. My creative mind and strong work ethic set me apart, and I\'m excited to make a meaningful impact in the tech industry in the future!"}</p>
-              <div className='button'>
+              <Container>
+                <Row justify="center" align="center" className='button'>
                 <a href="./FrontEndDeveloper.pdf" target="_blank">
-                <Button bordered size="lg" color="primary" rounded ghost>
+                <Button bordered color="primary" rounded ghost>
                   Resume
                 </Button>
                 </a>
-              </div>
+                </Row>
+              </Container>
       </motion.div>
     </div>
   )
