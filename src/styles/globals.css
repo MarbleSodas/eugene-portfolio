@@ -47,6 +47,7 @@ body {
   Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: var(--headlineBig);
   color: var(--primaryTextColor);
+  cursor: default;
 }
 
 .hero__header h2 {
@@ -54,6 +55,7 @@ body {
   font-size: var(--headlineSmall);
   text-transform: uppercase;
   color: var(--primaryColor);
+  cursor: default;
 }
 
 .scroll-section-outer {
@@ -104,7 +106,7 @@ body {
   Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: clamp(5rem, 9.9vw, 10rem);
   color: var(--primaryTextColor);
-  
+  cursor: default;
 }
 
 .paragraph {
@@ -120,6 +122,23 @@ body {
   font-family: var(--Questrial);
   font-size: clamp(1rem, 2vw, 2rem);
   color: var(--primaryTextColor);
+  cursor: default;
+}
+
+.policy {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 2rem;
+  font-family: var(--Questrial);
+  font-size: clamp(1rem, 2vw, 2rem);
+  color: var(--primaryTextColor);
+  cursor: pointer;
 }
 
 .contact {
@@ -134,6 +153,7 @@ body {
   color: white;
   padding-bottom: 4vw;
   padding-top: 4vw;
+  cursor: default;
 }
 
 .page {

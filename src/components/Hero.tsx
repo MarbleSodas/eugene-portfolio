@@ -18,8 +18,8 @@ function Hero() {
       </h1>
       {/* add animation to the h2 */}
       <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { delay: 8, duration: .5 }}}>
+      initial={{ opacity: 0, translateY: 25 }}
+      animate={{ opacity: 1, translateY: 0, transition: { delay: 8, duration: .5 }}}>
         <h2>Front-End Developer</h2>
       </motion.div>
     </header>

@@ -107,7 +107,7 @@ function Projects() {
         <header className={styles.header}>
             <motion.div
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, transition: { duration: .5 }}}
+                whileInView={{ opacity: 1, transition: { duration: .75}}}
             >
                 <h1 className='title'>
                     Projects
@@ -116,7 +116,7 @@ function Projects() {
         </header>
         <motion.div
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, transition: { duration: .5 }}}
+                whileInView={{ opacity: 1, transition: { duration: .75}}}
         >
         <Grid.Container gap={0} justify="space-evenly" >
             {list.map((item, index) => (

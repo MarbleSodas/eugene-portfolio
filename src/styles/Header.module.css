@@ -29,5 +29,6 @@
 
   .nav a:hover {
     color: gray;
+    cursor: pointer;
   }
   
