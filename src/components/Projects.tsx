@@ -14,34 +14,34 @@ import yoastIcon from './icons/yoast-svgrepo-com.svg';
 import javascriptIcon from './icons/javascript-svgrepo-com.svg';
 import graphqlIcon from './icons/graphql-svgrepo-com.svg';
 import reactIcon from './icons/react-javascript-js-framework-facebook-svgrepo-com.svg';
+import sassIcon from './icons/sass-svgrepo-com.svg';
 
 function Projects() {
     //products list
     const list = [
         {
             id: 1,
-            title: "Retro Audio",
-            img: "pw/AJFCJaUXIWcyDrMLMfK1BAziYYNDF93Dqb2EqaMQWX-Sesx_6iGws75mRi_bcAYLc7lwOzKBlrdCvWRTgosLQitAjKea23s_WA8xiYw4AaeCy0EU565aPQ=w2400",
-            description: "Retro Audio is my first project. It is a website for a fictional company that sells retro audio equipment.It was built using React, Next.js, CSS, and is hosted on Vercel. I put a lot of work into the animation of the page and parallax effects of the background of this page. Retro Audio is a responsive, mostly one-page website, with the exception being the support page, which is linked on a different page.",
-            webAddress: "https://retroaudio.page/",
-            gitRepo: "https://github.com/MarbleSodas/retro-audio",
+            title: "Marble Blog",
+            img: "pw/AIL4fc92p0BBpN8tWDBw3KP-XGDmEmhGXcp0qMj84pLauBJg5IZc5zAiTboGqvhVlMxcyf2TOiy39wxYBXosC9_wL1UBeqRdWNsOgUr9pWfbXk8GsVDYDw=w2400",
+            description: "Marble blog is a personal blog I made, which utilizes Next.js, GraphCMS, and is hosted on Vercel. It was coded in Javascript and has a nice comment feature for each post!",
+            webAddress: "https://marble-blog.vercel.app/",
+            gitRepo: "https://github.com/MarbleSodas/MarbleBlog",
             icons: [{
                 id: 1,
-                title: "Next.js",
-                url: "https://nextjs.org/",
-                icon: <Image src={nextIcon} alt="Next.js" width={30} height={30} />
-            }, {
+                title: "React",
+                url: "https://react.dev/",
+                icon : <Image src={reactIcon} alt="Next" width={30} height={30} />
+            },{
                 id: 2,
-                title: "Typscript",
-                url: "https://www.typescriptlang.org/",
-                icon : <Image src={typescriptIcon} alt="Typescript" width={30} height={30} />
-            }, {
+                title: "Sass",
+                url: "https://sass-lang.com/",
+                icon: <Image src={sassIcon} alt="Javascript" width={30} height={30} />
+            },{
                 id: 3,
-                title: "Vercel",
-                url: "https://vercel.com/",
-                icon : <Image src={vercelIcon} alt="Vercel" width={30} height={30} />
-            }
-        ]
+                title: "Graphql",
+                url: "https://graphql.org/",
+                icon : <Image src={graphqlIcon} alt="Graphql" width={30} height={30} />
+            }]
         },
         {
             id: 2,
@@ -69,28 +69,29 @@ function Projects() {
         },
         {
             id: 3,
-            title: "Marble Blog",
-            img: "pw/AIL4fc92p0BBpN8tWDBw3KP-XGDmEmhGXcp0qMj84pLauBJg5IZc5zAiTboGqvhVlMxcyf2TOiy39wxYBXosC9_wL1UBeqRdWNsOgUr9pWfbXk8GsVDYDw=w2400",
-            description: "Marble blog is a personal blog I made, which utilizes Next.js, GraphCMS, and is hosted on Vercel. It was coded in Javascript and has a nice comment feature for each post!",
-            webAddress: "https://marble-blog.vercel.app/",
-            gitRepo: "https://github.com/MarbleSodas/MarbleBlog",
+            title: "Retro Audio",
+            img: "pw/AJFCJaUXIWcyDrMLMfK1BAziYYNDF93Dqb2EqaMQWX-Sesx_6iGws75mRi_bcAYLc7lwOzKBlrdCvWRTgosLQitAjKea23s_WA8xiYw4AaeCy0EU565aPQ=w2400",
+            description: "Retro Audio is my first project. It is a website for a fictional company that sells retro audio equipment.It was built using React, Next.js, CSS, and is hosted on Vercel. I put a lot of work into the animation of the page and parallax effects of the background of this page. Retro Audio is a responsive, mostly one-page website, with the exception being the support page, which is linked on a different page.",
+            webAddress: "https://retroaudio.page/",
+            gitRepo: "https://github.com/MarbleSodas/retro-audio",
             icons: [{
                 id: 1,
-                title: "Javascript",
-                url: "https://www.javascript.com/",
-                icon: <Image src={javascriptIcon} alt="Javascript" width={30} height={30} />
-            }, {
-                id: 2,
                 title: "Next.js",
                 url: "https://nextjs.org/",
-                icon : <Image src={nextIcon} alt="Next" width={30} height={30} />
+                icon: <Image src={nextIcon} alt="Next.js" width={30} height={30} />
+            }, {
+                id: 2,
+                title: "Typscript",
+                url: "https://www.typescriptlang.org/",
+                icon : <Image src={typescriptIcon} alt="Typescript" width={30} height={30} />
             }, {
                 id: 3,
-                title: "Graphql",
-                url: "https://graphql.org/",
-                icon : <Image src={graphqlIcon} alt="Graphql" width={30} height={30} />
-            }]
-        }
+                title: "Vercel",
+                url: "https://vercel.com/",
+                icon : <Image src={vercelIcon} alt="Vercel" width={30} height={30} />
+            }
+        ]
+        },
       ];
 
     //state for selected product
