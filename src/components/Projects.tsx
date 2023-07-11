@@ -11,6 +11,9 @@ import vercelIcon from './icons/vercel-icon-svgrepo-com.svg';
 import wordpressIcon from './icons/wordpress-color-svgrepo-com.svg';
 import pleskIcon from './icons/plesk-svgrepo-com.svg';
 import yoastIcon from './icons/yoast-svgrepo-com.svg';
+import javascriptIcon from './icons/javascript-svgrepo-com.svg';
+import graphqlIcon from './icons/graphql-svgrepo-com.svg';
+import reactIcon from './icons/react-javascript-js-framework-facebook-svgrepo-com.svg';
 
 function Projects() {
     //products list
@@ -19,7 +22,9 @@ function Projects() {
             id: 1,
             title: "Retro Audio",
             img: "pw/AJFCJaUXIWcyDrMLMfK1BAziYYNDF93Dqb2EqaMQWX-Sesx_6iGws75mRi_bcAYLc7lwOzKBlrdCvWRTgosLQitAjKea23s_WA8xiYw4AaeCy0EU565aPQ=w2400",
-            description: "Retro Audio is my first project. It is a website for a fictional company that sells retro audio equipment.It was built using React, Next.js, CSS, and is hosted on Vercel.",
+            description: "Retro Audio is my first project. It is a website for a fictional company that sells retro audio equipment.It was built using React, Next.js, CSS, and is hosted on Vercel. I put a lot of work into the animation of the page and parallax effects of the background of this page. Retro Audio is a responsive, mostly one-page website, with the exception being the support page, which is linked on a different page.",
+            webAddress: "https://retroaudio.page/",
+            gitRepo: "https://github.com/MarbleSodas/retro-audio",
             icons: [{
                 id: 1,
                 title: "Next.js",
@@ -43,6 +48,8 @@ function Projects() {
             title: "Rancho Drive Train",
             img: "pw/AJFCJaV2ZCSjeSFMUeJiSJftrM0u_DAQWhIuzwFcpYcDowPs9PtxnWNnKIKLH5g2kHtzlkVYrCbeLpTzlg1UeQcbTGyW4a141qw-ud3bSkV1_dUoTgroRQ=w2400",
             description: "Rancho Drive Train is a website for a local business that sells and repairs drive train transmissions for off-road vehicles. It was built using Wordpress, Elementor, PHP, and is hosted on Plesk.",
+            webAddress: "https://ranchodrivetrain.com/",
+            gitRepo: "",
             icons: [{
                 id: 1,
                 title: "Wordpress",
@@ -57,7 +64,31 @@ function Projects() {
                 id: 3,
                 title: "Yoast",
                 url: "https://yoast.com/",
-                icon : <Image src={yoastIcon} alt="Vercel" width={30} height={30} />
+                icon : <Image src={yoastIcon} alt="Yoast" width={30} height={30} />
+            }]
+        },
+        {
+            id: 3,
+            title: "Marble Blog",
+            img: "pw/AIL4fc92p0BBpN8tWDBw3KP-XGDmEmhGXcp0qMj84pLauBJg5IZc5zAiTboGqvhVlMxcyf2TOiy39wxYBXosC9_wL1UBeqRdWNsOgUr9pWfbXk8GsVDYDw=w2400",
+            description: "Marble blog is a personal blog I made, which utilizes Next.js, GraphCMS, and is hosted on Vercel. It was coded in Javascript and has a nice comment feature for each post!",
+            webAddress: "https://marble-blog.vercel.app/",
+            gitRepo: "https://github.com/MarbleSodas/MarbleBlog",
+            icons: [{
+                id: 1,
+                title: "Javascript",
+                url: "https://www.javascript.com/",
+                icon: <Image src={javascriptIcon} alt="Javascript" width={30} height={30} />
+            }, {
+                id: 2,
+                title: "Next.js",
+                url: "https://nextjs.org/",
+                icon : <Image src={nextIcon} alt="Next" width={30} height={30} />
+            }, {
+                id: 3,
+                title: "Graphql",
+                url: "https://graphql.org/",
+                icon : <Image src={graphqlIcon} alt="Graphql" width={30} height={30} />
             }]
         }
       ];
@@ -101,16 +132,16 @@ function Projects() {
                             alt={item.title}
                         />
                         <Card.Footer isBlurred css={{ justifyItems: "flex-start" }}>
-                        <Row wrap="wrap" justify="space-between" align="center">
-                            <Text b className={styles.itemTitle}>{item.title}</Text>
-                            <div className={styles.iconList}>
-                                {item.icons.map((icon, index) => (
-                                    <div key={index} className={styles.iconItem}>
-                                        <a>{icon.icon}</a>
-                                    </div>
-                                ))}
-                            </div>
-                        </Row>
+                            <Row wrap="wrap" justify="space-between" align="center">
+                                <Text b className={styles.itemTitle}>{item.title}</Text>
+                                <div className={styles.iconList}>
+                                    {item.icons.map((icon, index) => (
+                                        <div key={index} className={styles.iconItem}>
+                                            <a>{icon.icon}</a>
+                                        </div>
+                                    ))}
+                                </div>
+                            </Row>
                         </Card.Footer>
                     </Card>
                 </Grid>
@@ -152,9 +183,15 @@ function Projects() {
                 </div>
             </Modal.Body>
             <Modal.Footer>
-            <Button auto flat color="error" onPress={() => setIsModalOpen(false)}>
+            <Row wrap="wrap" justify="space-evenly" align="center" css={{p: 10}}>
+                <Button auto flat color="success" onPress={() => window.open(list.find(item => item.id === selectedItemId)?.webAddress ?? "")}>Live</Button>
+                {list.find(item => item.id === selectedItemId)?.gitRepo !== "" && (
+                    <Button auto flat color="secondary" onPress={() => window.open(list.find(item => item.id === selectedItemId)?.gitRepo ?? "")}>GitHub</Button>
+                )}
+                <Button auto flat color="error" onPress={() => setIsModalOpen(false)}>
                 Close
             </Button>
+            </Row>
             </Modal.Footer>
         </Modal>
     </div>
